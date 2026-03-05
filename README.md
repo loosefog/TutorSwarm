@@ -10,20 +10,24 @@ This system implements a modular pipeline where each agent has a specialized rol
 5. Knowledge Librarian: Summarizes lessons and compiles a professional `notebook.md` for long-term retention.
 
 first，Setup Environment:
+```bash
 python -m venv venv
 # Windows:
 .\venv\Scripts\activate
 # Install dependencies:
 pip install -r requirements.txt
-
+```
 next，Configure API Keys:
+```bash
 Create a .env file in the root directory:
 OPENAI_API_KEY=your_deepseek_or_openai_key
 OPENAI_BASE_URL=https://api.deepseek.com
 LLM_MODEL=deepseek-chat
-
+```
 finally，Run the Tutor:
+```bash
 python tutor.py
+```
 
 Engineering Highlights
 Model Agnostic Design: Configurable via .env to seamlessly switch between OpenAI, DeepSeek, or local LLMs.
