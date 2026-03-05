@@ -1,7 +1,8 @@
-TutorSwarm：An Agentic Engineering experiment: A multi-agent system that acts as a personalized technical tutor.
+**Typescriptlearner**
+An Agentic Engineering experiment: A multi-agent system that acts as a personalized technical tutor.
 This project demonstrates an automated learning pipeline driven by **5 heterogeneous AI agents**, showcasing system decomposition, human-in-the-loop (HITL) workflows, and prompt engineering.
 
-Architecture (The Agent Swarm)
+**Architecture**
 This system implements a modular pipeline where each agent has a specialized role:
 1. Curriculum Architect: Decomposes complex topics into a structured, learnable syllabus.
 2. Theory Instructor: Generates personalized Markdown lessons with clear examples.
@@ -9,6 +10,7 @@ This system implements a modular pipeline where each agent has a specialized rol
 4. QA Grader: Performs static analysis and provides constructive feedback on user code.
 5. Knowledge Librarian: Summarizes lessons and compiles a professional `notebook.md` for long-term retention.
 
+**get ready to learn!**
 first，Setup Environment:
 ```bash
 python -m venv venv
@@ -29,7 +31,7 @@ finally，Run the Tutor:
 python tutor.py
 ```
 
-Engineering Highlights
+**Engineering Highlights**
 Model Agnostic Design: Configurable via .env to seamlessly switch between OpenAI, DeepSeek, or local LLMs.
 Agentic Orchestration: Uses rich for visualization and JSON Mode for robust inter-agent communication.
 Human-in-the-loop (HITL): Intentionally introduces manual coding steps to balance automation with deep learning practice.
